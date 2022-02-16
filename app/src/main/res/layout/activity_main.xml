@@ -16,82 +16,91 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/r1"
+            android:id="@+id/img1"
             android:layout_width="100dp"
             android:layout_height="101dp"
             android:layout_margin="18dp"
             android:onClick="tic"
+            android:tag="0"
             app:layout_column="0"
             app:layout_row="0" />
 
         <ImageView
-            android:id="@+id/r2"
+            android:id="@+id/img2"
             android:layout_width="100dp"
             android:layout_height="101dp"
             android:layout_margin="18dp"
+            android:tag="1"
             app:layout_column="1"
             app:layout_row="0"
             android:onClick="tic"/>
 
         <ImageView
-            android:id="@+id/r3"
+            android:id="@+id/img3"
             android:layout_width="100dp"
             android:layout_height="101dp"
             android:layout_margin="18dp"
+            android:tag="2"
             app:layout_column="2"
             app:layout_row="0"
             android:onClick="tic"/>
 
         <ImageView
-            android:id="@+id/r4"
+            android:id="@+id/img4"
             android:layout_width="100dp"
             android:layout_height="101dp"
             android:layout_margin="18dp"
+            android:tag="3"
             app:layout_column="0"
             app:layout_row="1"
             android:onClick="tic"/>
 
         <ImageView
-            android:id="@+id/r5"
+            android:id="@+id/img5"
             android:layout_width="100dp"
             android:layout_height="101dp"
             android:layout_margin="18dp"
+            android:tag="4"
             app:layout_column="1"
             app:layout_row="1"
             android:onClick="tic"/>
 
         <ImageView
-            android:id="@+id/r6"
+            android:id="@+id/img6"
             android:layout_width="100dp"
             android:layout_height="101dp"
             android:layout_margin="18dp"
+            android:tag="5"
             app:layout_column="2"
             app:layout_row="1"
             android:onClick="tic"/>
 
         <ImageView
-            android:id="@+id/r7"
+            android:id="@+id/img7"
             android:layout_width="100dp"
             android:layout_height="101dp"
             android:layout_margin="18dp"
+            android:tag="6"
             app:layout_column="0"
             app:layout_row="2"
             android:onClick="tic"/>
 
         <ImageView
-            android:id="@+id/r8"
+            android:id="@+id/img8"
             android:layout_width="100dp"
             android:layout_height="101dp"
             android:layout_margin="18dp"
+            android:tag="7"
             app:layout_column="1"
             app:layout_row="2"
             android:onClick="tic"/>
 
         <ImageView
-            android:id="@+id/r9"
+            android:id="@+id/img9"
             android:layout_width="100dp"
             android:layout_height="101dp"
             android:layout_margin="18dp"
+            android:tag="8"
             app:layout_column="2"
             app:layout_row="2"
             android:onClick="tic"/>
