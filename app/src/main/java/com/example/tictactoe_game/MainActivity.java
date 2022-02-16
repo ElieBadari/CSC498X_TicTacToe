@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    int player = 0;//0 is for the red player, 1 for yellow player
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,10 +18,21 @@ public class MainActivity extends AppCompatActivity {
     }
     public void tic(View view){
         //Toast.makeText(this,"I'm here",Toast.LENGTH_LONG).show(); testing if the onclick for all images is working
+
         ImageView tic = (ImageView) view;
-        tic.setImageResource(R.drawable.yellow);
         tic.setTranslationY(-1500);
-        tic.animate().translationYBy(1500).setDuration(600);
+
+
+        if(player == 0){
+            tic.setImageResource(R.drawable.red);
+            player = 1;
+        }
+        else{
+            tic.setImageResource(R.drawable.yellow);
+            player = 0;
+        }
+
+        tic.animate().translationYBy(1500).rotation(360*10).setDuration(600);
 
     }
 
