@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     int player = 0;//0 is for the red player, 1 for yellow player
     int[] game_state = {-1,-1,-1,-1,-1,-1,-1,-1,-1,}; //-1 for empty state
-    int[][] winning_state = {{0,1,2},{3,4,5},{6,7,8},{0,4,8},{2,4,6},{0,3,6},{1,4,7},{2,5,8}};
+    int[][] winning_states = {{0,1,2},{3,4,5},{6,7,8},{0,4,8},{2,4,6},{0,3,6},{1,4,7},{2,5,8}};
 
 
     @Override
@@ -41,6 +41,17 @@ public class MainActivity extends AppCompatActivity {
         }
 
         tic.animate().translationYBy(1500).rotation(360*10).setDuration(600);
+
+        for(int[] winning_state : winning_states){ //for each loop
+            if (game_state[winning_state[0]] == game_state[winning_state[1]] && game_state[winning_state[1]] == game_state[winning_state[2]] && game_state[winning_state[0]] != -1 ){
+                if(player == 1){
+                    Toast.makeText(this, "Red has won", Toast.LENGTH_LONG).show();
+                }
+                else{
+                    Toast.makeText(this, "Yellow has won", Toast.LENGTH_LONG).show();
+                }
+            }
+        }
 
     }
 
